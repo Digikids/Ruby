@@ -1,0 +1,120 @@
+BASICS OF A RUBY PROGRAM
+
+To print something out use 
+    -> print "Steve"
+    -> puts "Steve"
+    When using puts, items are printed out followed by a new line. On the other hand, 
+    when using print items are printed out on the same line.
+
+DRAWING A SHAPE 
+puts "   /|"
+puts "  / |"
+puts " /  |"
+puts "/___|"
+ 
+Ruby executes line by line. In the order written
+
+VARIABLES
+They are containers used to store data.
+
+****
+puts "There once was a man named Steve"
+puts "He was a programmer"
+puts "He really liked being a programmer"
+puts "but didn't like the name Steve."
+****
+
+In the above I have to manually change the characters name. To solve for that we put the name in a container
+
+character_name = "Steve"
+character_job = "programmer"
+
+****
+puts ("There once was a man named " + character_name)
+puts ("He was a " + character_job)
+puts ("He really liked being a " + character_job)
+puts ("but didn't like the name "  + character_name)
+****
+
+DATA TYPES IN RUBY
+name = "Steve" -> String
+age = 75  -> integer
+weight = 70.9 -> float
+ismale = true -> bool
+flaws = nil 
+
+WORKING WITH STRINGS
+phrase = "Digikids Academy"
+#string methods
+puts phrase.upcase()
+puts phrase.downcase()
+puts phrase.strip() #removes leading and trailing spaces
+puts phrase.length()
+puts phrase.include? "Academy"
+puts phrase[0] #Accesing characters using indexes
+puts phrase[0, 4]
+puts phrase.index("D")
+
+MATH AND NUMBERS
+puts 6 #prints out number 6
+puts 8 + 6 #Does basic arithmetics
+
+num = 20.907
+puts ("my fav num " + num.to_s) #converts nums to string
+
+puts num.abs()
+puts num.round()
+puts num.ceil()
+puts num.floor()
+puts Math.sqrt(36)
+
+
+USER INPUT
+puts "Enter your name"
+name = gets
+
+use the gets.chomp() to remove the new line.
+
+BUILDING A MADLIBS GAME
+
+puts "Enter a color: "
+color = gets.chomp()
+puts "Enter a plural_noun: "
+plural_noun = gets.chomp()
+puts "Enter a celebrity: "
+celebrity = gets.chomp()
+
+ 
+puts ("Roses are " + color)
+puts (plural_noun + " are blue")
+puts ("I love " + celebrity)
+
+ARRAYS IN RUBY
+Variables stores only one value. Arrays stores lots of data.
+
+friends = Array["Kelvin", "Karen", "Oscar]
+puts friends
+puts friends[0] #working with array index
+puts friends[-2]
+puts friends[0, 2] #range of items
+friends[0] = "Dorothy"
+friends = Array.new #Empty array
+friends.lenght()
+friends.include? "Karens"
+friends.reverse()
+friends.sort()
+
+HASHES 
+Stores data in key:value pair
+
+states = {
+    "Pennsylvania" => "PA", 
+    "New York" => "NY", 
+    :Oregon => "OR"
+}
+puts states[:Oregon]
+
+METHODS 
+def sayhi
+    puts "Hello User"
+end
