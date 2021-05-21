@@ -38,3 +38,156 @@ def sayhi
 end
 
 sayhi
+
+def Sayhi(name, age)
+    puts("Hello " + name + ", you are " + age.to_s)
+end
+
+Sayhi("Steve", 20)
+
+#IF STATEMENTS
+ismale = false
+istall = false
+
+if ismale 
+    puts "You are male"
+else
+    puts "You are not male"
+end
+
+
+if ismale and istall #we can also use another keyword or
+    puts "You are a tall male"
+elsif ismale and !istall
+    puts "You are a short male"
+elsif !ismale and istall
+    puts "You are not male but are tall"
+else
+    puts "You are not male and not tall"
+end
+
+
+def max(num1, num2, num3)
+    if num1 >= num2 and num1 >= num3
+        return num1
+    elsif num2 >= num1 and num2 >= num3
+        return num2
+    else
+        return num3
+    end
+end
+
+puts max(3, 78, 5)
+
+#CREATING A BETTER CALCULATOR
+puts "Enter First Number: "
+num1 = gets.chomp().to_f
+puts "Enter Operator: "
+op= gets.chomp()
+puts "Enter Second Number: "
+num2 = gets.chomp().to_f
+
+if op == "+"
+    puts(num1 + num2)  
+elsif op == "-"
+    puts(num1 - num2)
+elsif op == "/"
+    puts(num1 / num2)
+elsif op == "*"
+    puts(num1 * num2)
+else
+    puts "Invalid Operator"
+end
+
+
+#CASE
+def get_day_name(day)
+    day_name = ""
+
+    case day
+    when "mon"
+        day_name = "Monday"
+    when "tue"
+        day_name = "Teusday"
+    when "thur"
+        day_name = "Thursday"
+    when "wed"
+        day_name = "Wednesday"
+    when "fri"
+        day_name = "Friday"
+    when "sat"
+        day_name = "Saturday"
+    when "sun"
+        day_name = "Sunday"
+    else
+        day_name = "Invalid abbreviation"
+    end
+
+    return day_name
+end
+
+
+puts get_day_name("thur")
+
+#while loops
+index = 1
+while index <= 5
+    puts index
+    index += 1
+end
+#Check out for infinate loops
+
+#GUESSING GAME 
+secret_word = "Digikids"
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = false
+
+
+while guess != secret_word and !out_of_guesses
+    if guess_count < guess_limit
+        puts "Enter guess: "
+        guess = gets.chomp()
+        guess_count += 1
+    else
+         out_of_guesses = true
+    end 
+end
+
+if out_of_guesses
+    puts "You lose!"
+else
+    puts "You won!"
+end
+
+#FOR LOOPS
+friends = ["Kevin", "Karen", "Oscar", "Stephen", "Andy"]
+
+# for friend in friends
+#     puts friend
+# end
+
+friends.each do |friend|
+    puts friend
+end
+
+for index in 0..6
+    puts index
+end
+
+6.times do |index|
+    puts index
+end
+
+#EXPONENT METHOD
+def pow(base_num, pow_num)
+    result = 1
+
+    pow_num.times do |index|
+        result = result * base_num
+    end
+    return result
+end
+
+puts pow(3, 4)

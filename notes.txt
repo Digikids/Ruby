@@ -118,3 +118,47 @@ METHODS
 def sayhi
     puts "Hello User"
 end
+
+
+Return Statements 
+def cube(num)
+    return num * num * num
+end
+
+Any code that comes after the return key word is not executed
+
+IF STATEMENTS
+I wake up
+If I'm hungry
+    I eat breakfast
+
+I leave my house
+If its's cloudy
+    I bring an umbrella
+otherwise
+    I bring sungalasses
+
+Im at the restaurant
+if I want meat
+    I order a steak
+Otherwise if I want pasta
+    I order spaghetti & meatballs
+otherwise
+    I order a salad
+
+While using key word 'and' both the conditions must be true
+
+USING COMPARISONS WITH IF STATEMENTS
+
+CASE EXPRESSIONS
+Are special types of IF STATEMENTS used to check multiple conditions
+mon -> Monday
+teu -> Teusday
+wed -> Wednesday
+They are ussually appropriate when checking one value against many different values
+
+WHILE LOOPS ***GOOGLE
+FOR LOOPS ***GOOGLE
+
+EXPONENT METHOD
+It basically takes in two numbers and squares them accordingly
