@@ -1,11 +1,21 @@
-#EXPONENT METHOD
-def pow(base_num, pow_num)
-    result = 1
-
-    pow_num.times do |index|
-        result = result * base_num
+class Student
+    attr_accessor :name, :major, :gpa
+    def initialize(name, major, gpa)
+        @name = name
+        @major = major 
+        @gpa = gpa
     end
-    return result
+
+    def has_honors
+        if @gpa >= 3.5
+            return true
+        end
+        return false
+    end
+
 end
 
-puts pow(3, 4)
+student1 = Student.new("Steve", "Statistics", 3.4)
+student2 = Student.new("Caroline", "Criminology", 3.8)
+
+puts student2.has_honors

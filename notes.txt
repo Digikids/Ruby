@@ -162,3 +162,11 @@ FOR LOOPS ***GOOGLE
 
 EXPONENT METHOD
 It basically takes in two numbers and squares them accordingly
+
+READING FILES 
+Must be in the same directory
+
+EXEPTION HANDLING
+Make sure you are able to handle errors
+
+CLASSES AND OBJECTS

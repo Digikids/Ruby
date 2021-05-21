@@ -191,3 +191,76 @@ def pow(base_num, pow_num)
 end
 
 puts pow(3, 4)
+
+#Reading File
+File.open("notes.txt", "r") do |file|
+    # puts file
+    # puts file.read
+    # puts file.read().include? "BASICS OF A RUBY PROGRAM"
+    # puts file.readline()
+    # puts file.readline()
+
+    for line in file.readlines()
+        if line == "BASICS OF A RUBY PROGRAM"
+            puts line.index()
+        end
+    end 
+end 
+File.close()
+
+#ERROR RESCUE
+friends = ["Kevin", "Karen", "Oscar", "Stephen", "Andy"]
+
+#friends["Dog"]
+
+begin
+    #num = 10/0
+    friends["Dog"]
+rescue ZeroDivisionError
+    puts "Division by zero error"
+rescue TypeError => error
+    puts error
+end
+
+#CLASSES AND OBJECTS
+class Book
+    attr_accessor :title, :author, :pages
+    def initialize(title, author, pages)
+        @title = title
+        @author = author 
+        @pages = pages
+    end
+
+end
+
+#WITHOUT THE INITIALIZE FUNCTION
+# book1 = Book.new()
+# book1.title = "Harry Potter"
+# book1.author =  "JK Rowling"
+# book1.pages = 400
+
+book2 = Book.new("Lord of the rings", "Bill",500)
+puts book2.title
+
+#CLASS METHODS
+class Student
+    attr_accessor :name, :major, :gpa
+    def initialize(name, major, gpa)
+        @name = name
+        @major = major 
+        @gpa = gpa
+    end
+
+    def has_honors
+        if @gpa >= 3.5 
+            return true
+        end
+        return false
+    end
+
+end
+
+student1 = Student.new("Steve", "Statistics", 3.4)
+student2 = Student.new("Caroline", "Criminology", 3.8)
+
+puts student2.has_honors
