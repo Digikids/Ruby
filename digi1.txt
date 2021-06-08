@@ -1,0 +1,47 @@
+  VARIABLES
+They are containers used to store 
+data
+
+my_school 
+my_name = "Hawee"
+my_age
+
+puts ("My name is " + my_name)
+I go to _______
+I am ________
+
+    RULES WHILE NAMING VARIABLES
+-> All variable names must begin with a letter of the alphabet or an undescore(_)
+-> After the intial letter, variable names can also contain letters and numbers
+ eg myschool 
+    my8
+-> Uppercase letters are distince from lowercase letters
+ eg MYAGE is different from myage
+    school is different from SCHOOL
+-> You cannot use a KEYWORD(reseved words) as variable name
+-> Variables can ONLY contain letters, numbers or undescores
+    (*, %, $, @, -, +, (), )
+
+    DATA TYPES IN RUBY
+-> Numbers 
+    Integers - Are whole numbers Eg 8, 9, 10
+    Floating points or Floats - Are not whole numbers, They are either decimals or 
+    fractions eg 1.2, 3/4
+    * -> multiply
+    - -> Subtract
+    / -> Divide
+    + -> Add
+-> Strings
+    Strings are a groups of letters that represent a sentence or a word
+    A string is anything inside double quotation marks
+-> Boolean
+    They represent only one bit of information either true or false
+
+-> Arrays
+    They can contain numbers, strings and boolean values
+
+ARRAYS IN RUBY
+Variables stores only one value. Arrays can store more than one value    
+
+
+

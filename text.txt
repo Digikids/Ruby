@@ -1,0 +1,19 @@
+For each of the following variable, identify its type
+
+heights = Array[6, 7, 1, 2, 456]
+bool = Array[true, false]
+my_name = "Steve"
+my_age = 70
+is_male = true
+my_school = "Digikids"
+my_weight = "30 kgs"
+my_height = 1.4
+pets = ["Rex", "Chloe"]
+is_sad = false
+is_hungry = "True"
+is_tall = "Yes"
+counties = Array["Nairobi", "Muranga", "Nakuru"]
+
+
+Example 1
+heights -> Array containing numbers

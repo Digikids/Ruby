@@ -1,21 +1,11 @@
-class Student
-    attr_accessor :name, :major, :gpa
-    def initialize(name, major, gpa)
-        @name = name
-        @major = major 
-        @gpa = gpa
-    end
+puts "Enter a color: "
+color = gets.chomp()
+puts "Enter a plural_noun: "
+plural_noun = gets.chomp()
+puts "Enter a celebrity: "
+celebrity = gets.chomp()
 
-    def has_honors
-        if @gpa >= 3.5
-            return true
-        end
-        return false
-    end
-
-end
-
-student1 = Student.new("Steve", "Statistics", 3.4)
-student2 = Student.new("Caroline", "Criminology", 3.8)
-
-puts student2.has_honors
+#Madlibs
+puts ("Roses are " + color)
+puts (plural_noun + " are blue")
+puts ('I love ' + celebrity)
