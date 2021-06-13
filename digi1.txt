@@ -43,5 +43,23 @@ I am ________
 ARRAYS IN RUBY
 Variables stores only one value. Arrays can store more than one value    
 
+******IF STATEMENTS******
+I wake up 
+If I'm hungry
+    I eat breakfast
 
+I leave my house
+If its cloudy
+    I bring an umbrella
 
+I'm at the restaurant
+If i want meat
+    I order a steak
+
+For an if statement to execute the condition must be true
+= (assignment)
+==, >, <, <=, >=, != (comparisons)
+
+and -> is used when both the statements must be true
+or -> is used when one of the statements must be true, atleast one 
+        statement should be true
