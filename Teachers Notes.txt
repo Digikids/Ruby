@@ -169,4 +169,9 @@ Must be in the same directory
 EXEPTION HANDLING
 Make sure you are able to handle errors
 
+Functions are "self contained" modules of code that accomplish a specific task. 
+Functions usually "take in" data, process it, and "return" a result. 
+Once a function is written, it can be used over and over and over again. 
+Functions can be "called" from the inside of other functions.
+
 CLASSES AND OBJECTS

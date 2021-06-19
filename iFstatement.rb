@@ -6,6 +6,22 @@ else
     puts "You are not male"
 end
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if is_tall == false
     puts "You are not tall"
 else
@@ -34,4 +50,3 @@ elsif num2 >= num1 and num2 >= num3
 elsif num3 >= num1 and num3 >= num2
     puts num3
 end
-
