@@ -7,21 +7,6 @@ else
 end
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if is_tall == false
     puts "You are not tall"
 else
