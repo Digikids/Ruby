@@ -1,5 +1,6 @@
 is_male = false
-is_tall = true
+is_tall = true 
+
 if is_male == true
     puts "You are male"
 else
@@ -35,3 +36,4 @@ elsif num2 >= num1 and num2 >= num3
 elsif num3 >= num1 and num3 >= num2
     puts num3
 end
+

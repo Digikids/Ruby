@@ -1,0 +1,5 @@
+numbers = []
+for i in range(50):
+    numbers.append(i)
+
+print(numbers)

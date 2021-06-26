@@ -69,3 +69,11 @@ They are "self contined" modules of code that accomplish a specific task. Functi
 usually 'take in' data, process it, and 'return' a result. Once a function is 
 written, it can be used over and over and over again.
 Functions can be called from the inside of other functions
+
+Loops
+Loops in Ruby are used to execute the same block of code a specified number of times.
+While Loops
+while condition [do]
+    code
+end
+A while loop's condition is separated from the code by the reserved word do.
