@@ -1,6 +1,12 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for i in numbers do
-    if i % 2 == 0
-        puts i
-    end
-end
+yes_no = Array["yes", "no"]
+directions = Array["left", "right", "backward", "forward"]
+#Introduction
+puts("What is your name, adventurer?")
+name = gets.chomp()
+puts("Greetings, "+name+". Lets go on a quick quest!")
+puts("You find yourself on the edge of dark forest")
+puts("Can you find your way through?")
+
+#Start of the game
+response = ""
+puts(yes_no.include? response)
