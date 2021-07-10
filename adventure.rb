@@ -32,3 +32,4 @@ else
 end
 
 puts("Your final score is " + score.to_s)
+
