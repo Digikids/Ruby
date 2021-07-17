@@ -52,3 +52,94 @@ while condition == false
         puts("I did not understand that")
     end
 end
+
+i = 10
+while i > 0
+    puts(i)
+    i -= 1
+end
+
+nums = []
+i = 0
+while i <= 80
+    nums.append(i)
+    i += 1
+end
+for i in nums do
+    if i % 2 == 1
+        puts(i)
+    end
+end
+
+list1 =  [10, 20, 23, 11, 17]
+list2 = [13, 43, 24, 36, 12]
+list3 = []
+for i in list1 do
+    if i % 2 == 1
+        list3.append(i)
+    end
+end
+for j in list2 do
+    if j % 2 == 0
+        list3.append(j)
+    end
+end
+puts(list3)
+
+i = 10
+while i > 0
+    puts(i)
+    i -= 1
+    puts("Done")
+end
+
+
+list = []
+i = 2
+while i <= 100
+    list.append(i)
+    i += 1
+end
+
+for i in list do
+    if i == 2 or i == 3 or i == 5
+        puts(i) 
+    end
+    if i % 2 == 1
+        if i % 3 != 0
+            if i % 5 != 0
+                puts(i)
+            end
+        end
+    end
+end
+
+
+
+
+
+
+
+arr = [1,3,4,5,6,7,8,9,0,2]
+for i in arr do
+    puts(i*i)
+end
+
+
+def even_nums()
+    list = []
+    even_num = []
+    i = 4
+    while i <= 30
+        list.append(i)
+        i += 1
+    end
+    for i in list do
+        if i % 2 == 0
+            even_num.append(i)
+        end
+    end
+    puts(even_num)  
+end
+
+even_nums()

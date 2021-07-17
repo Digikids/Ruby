@@ -12,7 +12,7 @@ I am ________
 
     RULES WHILE NAMING VARIABLES
 -> All variable names must begin with a letter of the alphabet or an undescore(_)
--> After the intial letter, variable names can also contain letters and numbers
+-> After the initial letter, variable names can also contain letters and numbers
  eg myschool 
     my8
 -> Uppercase letters are distince from lowercase letters
@@ -104,6 +104,21 @@ Quiz
 * * * * * * * * 
 * * * * * * * * * 
 * * * * * * * * * * 
+
+1. Write code to display numbers from 10 to 1 using for loop in decending order
+2. Write a program to display all odd numbers from 0 to 80
+3. Given a two list of numbers create a new list such that new list should contain only odd 
+	numbers from the first list and even numbers from the second list
+	list1 =  [10, 20, 23, 11, 17]
+    list2 = [13, 43, 24, 36, 12] #Use the append
+4. Display a message “Done” after successful execution of for loop
+5. Write a program to display all prime numbers within 0 to 100
+6. Given an array of numbers. Turn every item of that array into its square 
+    Hint -> A square of a number is that number multiplied by itself
+7. Create a ruby function that generates a ruby array of all the even numbers between 4 to 30
+
+
+
 
 def calculation(num1, num2)
     puts(num1*num2)
