@@ -35,6 +35,59 @@ end
 a = "*"
 i = 1
 while i < 10
-    puts(i * a)
+    puts(i * b)
     i += 1
 end
+
+
+begin
+    #... process, may raise an exception
+rescue =>
+    #... error handler
+else
+    #... executes when no error
+ensure
+    #... always executed
+end
+
+points_scored = 100.0
+points_possible = 50 
+begin 
+    grade = points_scored / points_possible
+rescue TypeError
+    puts "There is an error"
+else 
+    puts "Your grade is #{grade}%"
+ensure 
+    puts "Compiling complete"
+end
+
+
+
+
+
+
+
+scores = [80.0, 85.0, 90.0, 95.0, 100.0]
+possibles = [100.0, 100.0, 100.0, nil, 100.0]
+
+grades = []
+for i in 0..(scores.length-1)
+    grades[i] = scores[i] / possibles[i]
+end rescue grades[idx = 0.0]
+
+puts(grades)
+
+
+my_age = 90
+your_age = 50
+
+begin
+    our_ages = my_age + your_age
+rescue => TypeError
+    puts "There is an error"
+else 
+    puts "There is no error"
+    puts our_ages
+end
+# Compling complete

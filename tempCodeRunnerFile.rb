@@ -1,17 +1,11 @@
-def even_nums()
-    list = []
-    even_num = []
-    i = 4
-    while i <= 30
-        list.append(i)
-        i += 1
-    end
-    for i in list do
-        if i % 2 == 0
-            even_num.append(i)
-        end
-    end
-    puts(even_num)  
-end
+my_age = 90
+your_age = 50
 
-even_nums()
+begin
+    our_ages = my_age + your_age
+rescue => TypeError
+    puts "There is an error"
+else 
+    puts "There is no error"
+    puts our_ages
+end

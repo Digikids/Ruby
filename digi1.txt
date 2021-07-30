@@ -81,7 +81,7 @@ A while loop's condition is separated from the code by the reserved word do.
 
 Quiz
 1. Write a function calculation() such that it can accept two 
-    variables and calculate the multiplication and division of them.
+    variables and calculate the difference and sum of them.
 
 2. Create a function showStudent() in such a way that it should 
     accept student name, and their age and display both.

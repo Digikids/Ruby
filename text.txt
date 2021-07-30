@@ -17,3 +17,31 @@ counties = Array["Nairobi", "Muranga", "Nakuru"]
 
 Example 1
 heights -> Array containing numbers
+
+
+What is an exception?
+An exception represents an error condition in a program. 
+Exceptions provide a mechanism for stopping the execution of a program. 
+They function similarly to “break,” in that they cause the instruction 
+pointer to jump to another location. 
+Unlike break, the location may be another layer of the program stack. 
+Unhandled exceptions cause Ruby programs to stop.
+
+When to handle an exception
+A simple rule for handling exceptions is to handle only those exceptions 
+you can do something about. 
+That’s easy to say, but sometimes difficult to get right. We have a 
+tendency to want to rescue every exception 
+that could possibly occur. Because we often don’t know what to 
+do about an exception, we tend to just log a message 
+and continue execution. Often this leads to writing extra code to deal 
+with the failures—code we don’t actually need.
+We should handle exceptions only when we can reasonably take some 
+action to correct the error and allow our program to 
+continue functioning.
+We need to think about three basic categories of exceptional behavior 
+when writing code: possible, probable, and inevitable.
+Possible exceptions
+Possible exceptions are theoretically possible, but unlikely to occur in the system. When these kinds of exceptions occur, 
+it’s typically because the system is truly broken. In this case, the situation is irrecoverable, and 
+we shouldn’t try to handle the exceptions.
