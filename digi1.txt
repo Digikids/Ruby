@@ -81,21 +81,22 @@ A while loop's condition is separated from the code by the reserved word do.
 
 Quiz
 1. Write a function calculation() such that it can accept two 
-    variables and calculate the difference and sum of them.
+    variables and calculate their product.
 
 2. Create a function showStudent() in such a way that it should 
-    accept student name, and their age and display both.
+    accept age, and Subtract it from 10 and display the output.
 
-3. Print the numbers between 50 and 200 using while loop
+3. Print the numbers between 40 and 60 using while loop
 
-4. Given a list, iterate it, and display numbers divisible by 4. 
-    HINT -> The modulus should be 0 if the number is divisible by four.
+4. Given a list, iterate it, and display numbers divisible by 3. 
+    HINT -> The modulus should be 0 if the number is divisible by three.
 
-5.  Write code to display numbers from 10 to 1 using for loop in decending order
+5.  Write code to display numbers from 20 to 10 using loop in decending order
 
-6.  Use a while loop to print the following pattern
+6.  Use a while loop to print the following pattern (20lines)
+
 * 
-* * -
+* * 
 * * * 
 * * * * 
 * * * * * 
@@ -116,9 +117,6 @@ Quiz
 6. Given an array of numbers. Turn every item of that array into its square 
     Hint -> A square of a number is that number multiplied by itself
 7. Create a ruby function that generates a ruby array of all the even numbers between 4 to 30
-
-
-
 
 def calculation(num1, num2)
     puts(num1*num2)

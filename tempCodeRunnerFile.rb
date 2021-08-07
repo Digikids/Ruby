@@ -1,11 +1,9 @@
-my_age = 90
-your_age = 50
+my_age = 100
+your_age = 100
+puts(my_age==your_age)
 
-begin
-    our_ages = my_age + your_age
-rescue => TypeError
-    puts "There is an error"
+if my_age == 90 or your_age == 90
+    puts "Atleast one statement is true"
 else 
-    puts "There is no error"
-    puts our_ages
+    puts "None of of the statements is true"
 end
